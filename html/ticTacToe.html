@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="https://cdn.tlm.cloud/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="../css/ticTacToe.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- div that goes around everything but the turn screen div -->
+    <div class="everything">
+        <!-- title -->
+        <h1>Tic-Tac-Toe</h1>
+        <!-- start button -->
+        <div class="start">
+            <button class='startBtn'>Start Game</button>
+        </div>
+        <!-- instructions for picking a game piece -->
+        <h1 class="instructions">Choose Your Game Piece To Begin Playing</h1>
+        <!-- the buttons for the game piece -->
+        <div class="emojiChoices">
+            <button type="button" class="gamePiece" value="web" data-index="0">🕸</button>
+            <button type="button" class="gamePiece" value="web" data-index="1">🕷</button>
+            <button type="button" class="gamePiece" value="angel" data-index="0">😇</button>
+            <button type="button" class="gamePiece" value="angel" data-index="1">😈</button>
+            <button type="button" class="gamePiece" value="sick" data-index="0">🤢</button>
+            <button type="button" class="gamePiece" value="sick" data-index="1">😷</button>
+            <button type="button" class="gamePiece" value="caterpillar" data-index="0">🐛</button>
+            <button type="button" class="gamePiece" value="caterpillar" data-index="1">🦋</button>
+        </div>
+        <!-- default choice button/text -->
+        <div><h2>Or<br>Choose</h2></div>
+        <div class="defaultBtn"><button type="button" value="default" class="default gamePiece">Default</button></div>
+        <!-- the scores -->
+        <div id="main">
+            <p id='win'>Win:<span class="win"></span></p>
+            <p  id="lose">Lose:<span class="lose"></span></p>
+            <p id="tie">Tie:<span class="tie"></span></p>
+        </div>
+        <!-- the reset button -->
+        <div class="resetBtn">
+            <button>Reset Game</button>
+        </div>
+        <!-- the result on who won -->
+        <p class="whoWon"></p>
+        <!-- beginning of tic-tac-toe table -->
+        <table>
+            <tr>
+                <td id="one"></td>
+                <td id="two"></td>
+                <td id="three"></td>
+            </tr>
+            <tr>
+                <td id="four"></td>
+                <td id="five"></td>
+                <td id="six"></td>
+            </tr>
+            <tr>
+                <td id="seven"></td>
+                <td id="eight"></td>
+                <td id="nine"></td>
+            </tr>
+        </table>
+    </div>
+    <!-- turn screen message that appears only when the screen is to small -->
+    <div id="turnScreen" class="text-center">
+        <h1>Please Turn Phone sideways to continue playing</h1>
+    </div>
+    <footer class="fixed-bottom"><a href="../index.html">~HOME~</a></footer>
+    
+    <script src="https://cdn.tlm.cloud/jquery/3.3.1/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.tlm.cloud/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.tlm.cloud/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdn.tlm.cloud/jquery/3.3.1/jquery-3.3.1.min.js"
+        integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
+        crossorigin="anonymous"></script>
+    <script src="../js/ticTacToe.js"></script>
+</body>
+
+</html>

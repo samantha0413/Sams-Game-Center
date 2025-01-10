@@ -1,0 +1,262 @@
+body {
+    background-color: black!important;
+}
+/* Main Page */
+/* this is the main title */
+.mainH1 {
+    font-size: 50px!important;
+    margin-bottom: 0;
+    animation-duration: 3s;
+    animation-name: slideRight;
+}
+/* this is the main main title and the sub-title */
+.mainH1,
+.sub-title {
+       text-align: center;
+}
+/* this is the sub-title */
+.sub-title {
+    animation-duration: 3s;
+    animation-name: slidein;
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 3em;
+}
+/* this is the header on the table for the high scores */
+.highScoreHeader {
+    color: darkred;
+}
+/* this is all the instructions throughout the game */
+.instructions {
+    color: darkturquoise;
+}
+/* this is the top scores and main page title */
+.topHigh,
+.mainH1,
+footer a {
+    color: violet;
+}
+/* ==========Animations on my pages========== */
+@keyframes slidein {
+    from {
+      margin-left: 50%;
+      width: 300%;
+    }
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }  
+  @keyframes slideRight {
+    from {
+      margin-left: -50%;
+      width: 0%;
+    }
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  /* ================================== */
+
+/* this is the section on the index page */
+section {
+    flex-direction: column;
+    align-items: center;
+}
+/* this is the start button and the easy/normal buttons at the beginning */
+.startBtn,
+.modeBtn {
+    background-color: #F7C614;
+    height: 4em;
+    width: 7em;
+    font-size: 2em;
+}
+/* this is all the buttons beside the gameboard buttons */
+.startBtn,
+.subBtn,
+.goHome,
+.modeBtn {
+      border-radius: 3em;
+}
+/* this is the category buttons at the beinning and the 2 buttons at the end*/
+.subBtn,
+.goHome{
+    height: 6em;
+    width: 12em;
+}
+/* this the category buttons at the beginning */
+.subBtn a,
+.goHome a {
+    font-size: 32px;
+}
+/* this is removing he underline from the links on the category buttons at the beginning and the pick another category at the end */
+.goHome a,
+.subBtn a {
+     text-decoration: none;
+}
+/* this is the pick another category button at the end */
+.goHome a {
+    font-size: 18px;
+}
+/* this is the categories buttons on hover */
+.subBtn:hover {
+ background-color: coral;
+}
+/* this is the h4 and start button on hover  */
+h4,
+.startBtn:hover {
+    color: white;
+}
+/* start button on hover */
+.startBtn:hover {
+ background-color: green;
+}
+/* Game Board settings*/
+/* this is the title at the top of the gamepage */
+.gameBoardTitle {
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+/* this is the header on the gameboard and the high score table at the beginning */
+.header,
+.highScoreHeader {
+     border: 2px solid black!important;
+}
+/* this is the size of table */
+.table {
+    padding: 0!important;
+    max-width: 500px!important;
+    max-height: 400px!important;
+}
+/* this is the size of the table data and the buttons inside it */
+td,
+.gameBtn {
+    width: 120px;
+    height: 70px;
+}
+/* modal styles*/
+/* this is the buttons for the answers on the multiple choice buttons */
+.choice1,
+.choice2,
+.choice3,
+.choice4 {
+   width: 215px;
+   height: 52px;
+}
+/* this is the timer on the modal */
+.timeRemaining,
+#questionTimer {
+     font-size: 25px;
+}
+/* this is the close button at the top of the modal to clost the modal */
+.close {
+    height: 10px;
+    width: 20px;
+}
+/* this is the submit button on the normal mode for players to submit their answer */
+#playerAnsBtn {
+    height: 30px;
+    width: 80px;
+}
+/* this is the font for the question and the result(correct or incorrect) of the question */
+#question,
+#result,
+footer a {
+    font-size: 30px;
+} 
+footer a {
+    margin-left: 30px;
+}
+/* media Queries */
+@media screen and (max-width:750px){ 
+    .table {
+        max-width: 300px!important;
+        max-height: 200px!important;
+    }
+    td,
+    td button {
+    width: 5em;
+    height: 5em;
+    
+    }
+    .gameBoard button {
+        font-size: 16px!important;
+    }
+} 
+@media screen and (max-width:570px){
+    .table {
+        width: 150px!important;
+        height: 200px!important;
+    }
+    td,
+    td button {
+        width: 4em;
+        height: 2em;
+    }
+    .gameBoard button {
+        font-size: 16px!important;
+    }
+} 
+/* =================different themes for the games================== */
+/* disney gameboard */
+.disney{
+    background-image: url(../images/Minions.jpeg);
+}
+.gameBoard button {
+    background-color: #3F48CC;
+    color: #F7C614;
+    font-size: 28px;
+}
+.disney .header {
+    background-color: #9A491B;
+    color: yellow;
+}
+/* random gameboard */
+.random{
+    background-image: url(../images/cars.jpeg);
+}
+.random .header {
+    background-color: khaki;
+    color: slateblue;
+}
+.random .gameBoard button{
+    background-color: peachpuff;
+    color: red;
+}
+/* sports gameboard */
+.sports{
+    background-image: url(../images/sport.jpeg);
+}
+.sports .header{
+    background-color: limegreen;
+     color: black;
+}
+.sports .gameBoard button{
+    background-color: lightgrey;
+    color: green;
+}
+/* coding gameboard */
+.coding{
+    background-image: url(../images/keyboardGlowing.jpeg);
+}
+.coding .gameBoard button {
+    color: mediumvioletred;
+}
+.coding .header {
+    background-color: royalblue;
+    color: aqua;
+}
+/* this is for all the gameboard picture backgrounds */
+.coding,
+.sports,
+.random,
+.disney {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* this is the high score header and the buttons on the coding gameboard */
+.highScoreHeader,
+.coding .gameBoard button {
+    background-color: skyblue;
+}

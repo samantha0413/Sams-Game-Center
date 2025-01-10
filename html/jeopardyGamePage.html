@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jeopardy</title>
+    <!-- <link href="css/gamePage.css" rel="stylesheet"> -->
+    <link href="../css/jeopardy.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.tlm.cloud/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- this is the title -->
+    <h1 class="gameBoardTitle text-white text-center">Jeopardy</h1>
+    <!-- this div goes around entire table -->
+    <div class="text-center gameBoard d-flex justify-content-center align-items-center">
+        <!-- this is the start of the table -->
+        <table class="table table-borderless">
+            <thead>
+                <!-- this is the table headers -->
+                <tr scope="row">
+                    <th class="text-center header"></th>
+                    <th class="text-center header"></th>
+                    <th class="text-center header"></th>
+                    <th class="text-center header"></th>
+                    <th class="text-center header"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- this is first row of the table -->
+                <tr scope="row">
+                    <td><button class="gameBtn" data-toggle="modal" data-target="#ModalCenter" data-sub="sub1"
+                            data-index='0' value="200">$200</button></td>
+                    <td><button class="gameBtn" data-toggle="modal" data-target="#ModalCenter" data-sub="sub2"
+                            data-index='0' value="200">$200</button></td>
+                    <td><button class="gameBtn" data-toggle="modal" data-target="#ModalCenter" data-sub="sub3"
+                            data-index='0' value="200">$200</button></td>
+                    <td><button class="gameBtn" data-toggle="modal" data-target="#ModalCenter" data-sub="sub4"
+                            data-index='0' value="200">$200</button></td>
+                    <td><button class="gameBtn" data-toggle="modal" data-target="#ModalCenter" data-sub="sub5"
+                            data-index='0' value="200">$200</button></td>
+                </tr>
+                <!-- this is the second row of the table -->
+                <tr scope="row">
+                    <td><button class="gameBtn" data-toggle="modal" data-target="#ModalCenter" data-sub="sub1"
+                            data-index="1" value="400">$400</button></td>
+                    <td><button class="gameBtn" data-toggle="modal" data-target="#ModalCenter" data-sub="sub2"
+                            data-index="1" value="400">$400</button></td>
+                    <td><button class="gameBtn" data-toggle="modal" data-target="#ModalCenter" data-sub="sub3"
+                            data-index="1" value="400">$400</button></td>
+                    <td><button class="gameBtn" data-toggle="modal" data-target="#ModalCenter" data-sub="sub4"
+                            data-index="1" value="400">$400</button></td>
+                    <td><button class="gameBtn" data-toggle="modal" data-target="#ModalCenter" data-sub="sub5"
+                            data-index="1" value="400">$400</button></td>
+                </tr>
+                <!-- this is the third row of the table -->
+                <tr scope="row">
+                    <td><button class="gameBtn" data-toggle="modal" data-target="#ModalCenter" data-sub="sub1"
+                            data-index="2" value="600">$600</button></td>
+                    <td><button class="gameBtn" data-toggle="modal" data-target="#ModalCenter" data-sub="sub2"
+                            data-index="2" value="600">$600</button></td>
+                    <td><button class="gameBtn" data-toggle="modal" data-target="#ModalCenter" data-sub="sub3"
+                            data-index="2" value="600">$600</button></td>
+                    <td><button class="gameBtn" data-toggle="modal" data-target="#ModalCenter" data-sub="sub4"
+                            data-index="2" value="600">$600</button></td>
+                    <td><button class="gameBtn" data-toggle="modal" data-target="#ModalCenter" data-sub="sub5"
+                            data-index="2" value="600">$600</button></td>
+                </tr>
+                <!-- this is the fourth row of the table -->
+                <tr scope="row">
+                    <td><button class="gameBtn" data-toggle="modal" data-target="#ModalCenter" data-sub="sub1"
+                            data-index="3" value="800">$800</button></td>
+                    <td><button class="gameBtn" data-toggle="modal" data-target="#ModalCenter" data-sub="sub2"
+                            data-index="3" value="800">$800</button></td>
+                    <td><button class="gameBtn" data-toggle="modal" data-target="#ModalCenter" data-sub="sub3"
+                            data-index="3" value="800">$800</button></td>
+                    <td><button class="gameBtn" data-toggle="modal" data-target="#ModalCenter" data-sub="sub4"
+                            data-index="3" value="800">$800</button></td>
+                    <td><button class="gameBtn" data-toggle="modal" data-target="#ModalCenter" data-sub="sub5"
+                            data-index="3" value="800">$800</button></td>
+                </tr>
+                <!-- this is the fifth row of the table -->
+                <tr scope="row">
+                    <td><button class="gameBtn lastGameBtn" data-toggle="modal" data-target="#ModalCenter"
+                            data-sub="sub1" data-index="4" value="1000">$1000</button></td>
+                    <td><button class="gameBtn lastGameBtn" data-toggle="modal" data-target="#ModalCenter"
+                            data-sub="sub2" data-index="4" value="1000">$1000</button></td>
+                    <td><button class="gameBtn lastGameBtn" data-toggle="modal" data-target="#ModalCenter"
+                            data-sub="sub3" data-index="4" value="1000">$1000</button></td>
+                    <td><button class="gameBtn lastGameBtn" data-toggle="modal" data-target="#ModalCenter"
+                            data-sub="sub4" data-index="4" value="1000">$1000</button></td>
+                    <td><button class="gameBtn lastGameBtn" data-toggle="modal" data-target="#ModalCenter"
+                            data-sub="sub5" data-index="4" value="1000">$1000</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- end of the table -->
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id='ModalCenter' tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true"
+        data-backdrop='static'>
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="modalHeader">
+                        <span class="timeRemaining">Time Remaining:</span>
+                        <span id="questionTimer"></span>
+                        <button class="close" type="button" data-dismiss="modal">X</button>
+                    </div>
+                    <p id='question'>Q:</p>
+                    <!-- these are the buttons for the multiple choice game -->
+                    <div class="choiceBtns">
+                        <button type="button" class="choice1"></button>
+                        <button type="button" class="choice2"></button>
+                    </div>
+                    <div class="choiceBtns">
+                        <button type="button" class="choice3"></button>
+                        <button type="button" class="choice4"></button>
+                    </div>
+                    <!-- this is the form for the normal game -->
+                    <form class="playerInput">
+                        <input type="text" id="playerAnswer">
+                        <button type="submit" id="playerAnsBtn">submit</button>
+                    </form>
+                    <p id='result'></p>
+                    <span class='correctAnswer'></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end modal -->
+    <div>
+        <h1 id="playerScore" class="text-white text-center"></h1>
+    </div>
+    <!-- this is the end buttons for the end of the game -->
+    <div class="endBtns text-center">
+        <button type="button" class="goHome"><a class="text-dark" href="jeopardy.html">Play Again</a></button>
+    </div>
+    <!-- this is so if the screen is to small you have to turn your phone sideways to play the game -->
+    <div id="turnScreen">
+        <h1 class="text-white">If you're on a phone please turn your phone sideways to play the game. If you're
+            on a
+            computer please make your screen bigger to play.</h1>
+    </div>
+
+    <script src="https://cdn.tlm.cloud/jquery/3.3.1/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.tlm.cloud/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.tlm.cloud/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.tlm.cloud/moment.js/2.26.0/moment.min.js"
+        integrity="sha384-BiN1bGszLSTO87+pMGYkZWJ3YRpAJ5lOu17mR/6SNsWXav5I5aw/HdrFeC1szmo6"
+        crossorigin="anonymous"></script>
+    <script src="../js/jeopardyQuestions.js"></script>
+    <script src="../js/jeopardy.js"></script>
+</body>
+
+</html>

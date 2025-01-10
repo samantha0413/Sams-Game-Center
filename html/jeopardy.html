@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jeopardy</title>
+    <link rel="stylesheet" href="https://cdn.tlm.cloud/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="../css/jeopardy.css" rel="stylesheet">
+</head>
+
+<body>
+    
+    <header>
+        <!-- this is the title and sub-title to the game -->
+        <h1 class="mainH1">JEOPARDY</h1>
+        <h4 class="sub-title">A Trivia Game</h4>
+    </header>
+    <main>
+        <!-- this is for the instructions on the pages -->
+        <h2 class="instructions text-center"></h2>
+        <section class="d-flex">
+            <!--  the start button -->
+            <button class="startBtn mainBtn" type="button">START
+                GAME</button>
+            <!-- high scores button -->
+            <button type="button" class="highScoreBtn btn-lg mt-5">High Scores</button>
+            <!-- this is the high scores table  -->
+            <div class="highScoreDiv">
+                <h1 class="noHighScores text-white">No High Scores</h1>
+                <h1 class="topHigh text-center">Top 5 High Scores</h1>
+                <table class="text-center text-white highScoreTable">
+                    <thead>
+                        <th class="highScoreHeader">Name</th>
+                        <th class="highScoreHeader">Score</th>
+                        <th class="highScoreHeader">Date</th>
+                    </thead>
+                </table>
+                <button class="backBtn" type="button">Back</button>
+            </div>
+            <!-- end of high scores table -->
+            <!-- this is the form for the players name -->
+            <form class="signInForm">
+                <input type="text" id="userName" placeholder="Enter Name" required>
+                <button type="submit" class="goBtn">Go</button>
+            </form>
+            <!-- the mode buttons of easy and normal -->
+            <div>
+                <button type="button" class="modeBtn" value="easy">Easy</button>
+                <button type="button" class="modeBtn" value="normal">Normal</button>
+            </div>
+            <!-- the 4 category buttons -->
+            <button class="subBtn" type="button" value="coding"><a href="jeopardyGamePage.html">CODING</a></button>
+            <button class="subBtn" type="button" value="disney"><a href="jeopardyGamePage.html">DISNEY</a></button>
+            <button class="subBtn" type="button" value="sports"><a href="jeopardyGamePage.html">SPORTS</a></button>
+            <button class="subBtn" type="button" value="random"><a href="jeopardyGamePage.html">RANDOM</a></button>
+        </section>
+    </main>
+    <footer class="fixed-bottom"><a href="../index.html">~HOME~</a></footer>
+    <script src="https://cdn.tlm.cloud/jquery/3.3.1/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.tlm.cloud/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.tlm.cloud/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.tlm.cloud/jquery/3.3.1/jquery-3.3.1.min.js"
+        integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.tlm.cloud/moment.js/2.26.0/moment.min.js"
+        integrity="sha384-BiN1bGszLSTO87+pMGYkZWJ3YRpAJ5lOu17mR/6SNsWXav5I5aw/HdrFeC1szmo6"
+        crossorigin="anonymous"></script>
+    <script src="../js/jeopardyQuestions.js"></script>
+    <script src="../js/jeopardy.js"></script>
+
+</body>
+
+</html>

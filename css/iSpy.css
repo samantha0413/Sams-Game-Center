@@ -1,0 +1,86 @@
+body {
+    background-color: black;
+}
+/* list item */
+li{
+    font-size: 80px;
+    list-style: none;
+    width: 140px;
+}
+/* the nav and play again button */
+#allList,
+.playAgain {
+    display: flex;
+}
+/* the nav that holds the list item */
+#allList{
+    color: white;
+    margin: auto;
+    justify-content: space-evenly;
+    width: 88px;
+    height: 120px;
+}
+/*  */
+#list1 {
+    padding: 0!important;
+    background-color: darkturquoise;
+    height: 120px;
+    text-align: center;
+}
+/* title */
+h1 {
+    color: red;
+    text-align: center;
+    font-size: 70px;
+}
+/* game over text */
+.gameOver,
+footer a {
+    color: deeppink;
+}
+/* start button */
+.startBtn {
+    width: 200px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: deepskyblue;
+    color: mediumvioletred;
+}
+/* the div around the start button */
+.start {
+    text-align: center;
+}
+/* the pictures that append for the game */
+.correct, .picture {
+    position: absolute;
+}
+/* next button */
+.next{
+    margin-top: 20px;
+    height: 58px;
+    width: 186px;
+    background-color: deeppink;
+    color: springgreen;
+}
+/* play again button */
+.playAgainBtn {
+    height: 50px;
+    width: 132px;
+    font-size: 24px;
+    background-color: darkmagenta;
+    color: chartreuse;
+}
+/* play again button */
+.playAgain {
+    justify-content: center;
+}
+/* footer */
+footer a {
+    margin-left: 30px;
+}
+/* next button, home link, and start button */
+footer a,
+.next,
+.startBtn {
+   font-size: 30px;
+}

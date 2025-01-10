@@ -1,0 +1,115 @@
+body {
+    background-color: black;
+}
+/* title */
+svg {
+    margin: auto;
+}
+/* the results if you're right or wrong text color*/
+h1,
+h2 {
+    color: aqua;
+}
+/* the results and the letters displayed center */
+h1,
+.wordList li {
+    text-align: center;
+}
+/* the list, the input for users, the next button and svg centered*/
+.wordList,
+.userInput,
+.nextPlay,
+svg,
+.playAgainDiv,
+.start {
+    display: flex;
+}
+h2{
+    width: 678px;
+    margin: auto;
+}
+/* start button div */
+.start {
+    height: 250px;
+    align-items: center;
+}
+/* start button */
+.startBtn {
+    background-color: darkorange;
+    height: 50px;
+    width: 94px;
+    color: purple;
+    border-radius: 20px;
+    font-size: 26px;
+}
+/* the list, the input for users, the next button */
+.wordList,
+.userInput,
+.nextPlay,
+.playAgainDiv,
+.start {
+    justify-content: center;
+}
+.playAgainDiv {
+    margin: 20px 0
+}
+/* the list with no bullet points */
+.wordList {
+    list-style: none;
+    margin: 40px;
+}
+/* the items in the list and the next button */
+.wordList li, 
+.next {
+      height: 50px;
+}
+/* the items in the list styling */
+.wordList li {
+    background-color: blueviolet;
+    color: white;
+    width: 50px;
+    margin-right: 5px;
+}
+/* the hint button styling*/
+#hintBtn {
+    margin-left: 4em;
+    background-color: cyan;
+    height: 48px;
+    width: 92px;
+    font-size: 30px;
+    color: navy;
+}
+/* submit button next to input box color
+*/
+#submitBtn {
+    background-color: magenta;
+}
+/* next word button styling */
+.next{
+    width: 130px;
+    font-size: 24px;
+    background-color: lawngreen;
+    color: mediumblue;
+}
+/* play again button */
+.playAgain {
+    height: 50px;
+    width: 120px;
+    font-size: 22px;
+    background-color: deeppink;
+    color: turquoise;
+}
+/* the items in the list and the results text size */
+.results,
+.wordList li {
+    font-size: 40px;
+}
+/* the results text color */
+.results{
+    color: coral;
+}
+footer a {
+    font-size: 30px;
+    color: deeppink;
+    margin-left: 30px;
+}

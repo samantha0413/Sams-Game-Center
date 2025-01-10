@@ -1,0 +1,51 @@
+body{
+    background-image: url(../images/games.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.row{
+    justify-content:center;
+    align-items: center;
+}
+.games a {
+    text-decoration: none;
+}
+a p {
+    color: cyan;
+    font-size: 25px; 
+}
+a p:hover {
+    color: deeppink;
+}
+img {
+    height: 198px; 
+    width: 262px;
+    border: 4px solid springgreen;
+      margin-top: 50px;
+}
+img:hover{
+    /* transform: rotateZ(5deg); */
+    border: 4px solid deeppink;
+}
+header {
+   height: 200px;
+}
+.sub-title {
+    padding: 10px 0px;
+    color: tomato;
+    background-color: black;
+    width: 350px;
+    margin: auto;
+}
+.instructions {
+    color: chartreuse;
+}
+.title {
+   background-color: black;
+   color: cyan;
+}
+@media screen and (max-width:645px){
+    .sub-title{
+        width: auto;
+    }
+}

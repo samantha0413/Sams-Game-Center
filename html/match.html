@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Match Game</title>
+    <link rel="stylesheet" href="https://cdn.tlm.cloud/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="../css/match.css" rel="stylesheet">
+</head>
+
+<body>
+     
+    <!-- title -->
+    <h1 class="title">Match Game</h1>
+    <div class="start">
+        <button type="button" class="startBtn">START</button>
+    </div>
+    <!-- tells you when you have won -->
+    <h1 class="won">Congratulations!! You Won</h1>
+    <!-- restart button -->
+    <div class="restartBtn">
+        <button type="button" class="restart">Restart</button>
+    </div>
+    <!-- instructions for choosing a theme -->
+        <h1 class="theme">Choose A Theme</h1>
+        <h1 class="gameInstructions">Now Choose A Game</h1>
+        <!-- the different choices for theme buttons -->
+        <div class="choices">
+            <button type="button" class="themeBtn" value="choice1"><img src="../images/emoji:choice1.png"></button>
+            <button type="button" class="themeBtn" value="choice2"><img src="../images/choice2.png"></button>
+            <button type="button" class="themeBtn" value="choice3"><img src="../images/choice3.png"></button>
+            <button type="button" class="themeBtn" value="choice4"><img src="../images/choice4.png"></button>
+        </div>
+        <h1 class="OR">OR<br>Choose</h1>
+        <!-- default choice for theme -->
+        <div class="default">
+            <button type="button" class="themeBtn" value="default">Default</button>
+        </div>
+    <!-- the game buttons where you choose the actual game -->
+    <div class="allGameBtns">
+        <button type="button" class="gameBtn" value="emoji">Emoji</button>
+        <button type="button" class="gameBtn" value="math">Math</button>
+        <button type="button" class="gameBtn" value="couples">Famous Couples</button>
+        <button type="button" class="gameBtn" value="opposite">Opposite</button>
+    </div>
+    <!-- game board where the cards append -->
+    <section class="container matchBoard">
+        <div class="game">
+            <section class="container-fluid row gameArea"></section>
+        </div>
+    </section>
+   <footer class="fixed-bottom"><a href="../index.html">~HOME~</a></footer>
+
+    <script src="https://cdn.tlm.cloud/jquery/3.3.1/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.tlm.cloud/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.tlm.cloud/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.tlm.cloud/jquery/3.3.1/jquery-3.3.1.min.js"
+        integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
+        crossorigin="anonymous"></script>
+    <script src="../js/match.js"></script>
+</body>
+
+</html>

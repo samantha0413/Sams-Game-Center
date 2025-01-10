@@ -1,0 +1,250 @@
+body{
+    background-color: black;
+}
+footer a {
+    color: aqua;
+    font-size: 30px;
+    margin-left: 30px;
+}
+/* title */
+.title{
+    animation: colors 10s infinite linear;
+    font-size: 70px;
+}
+/* animation to chang the colors on the title */
+@keyframes colors {
+    0%{color: deeppink}
+    20%{color: yellow}
+    40%{color: cyan}
+    60%{color: lawngreen}
+    80%{color: orange}
+    100%{color:darkorchid}
+}
+/* start button styling */
+.startBtn {
+    width: 114px;
+    height: 70px;
+    border-radius: 36px;
+    background-color: crimson;
+    font-size: 24px;
+    transition-property:background-color, color, letter-spacing;
+    transition-duration:1s, 1s, 1s;
+    transition-timing-function:ease-out, ease-in, ease-out;
+}
+/* start button on hover */
+.startBtn:hover,
+.startBtn:focus {
+    background-color: dodgerblue;
+    color: yellow;
+    letter-spacing: 6px;
+}
+.start{
+   height: 300px;
+}
+/* start and restart button text color */
+.restart,
+.startBtn {
+    color: cyan;
+}
+/* all the h1's on the page..helps put space between */
+h1 {
+    margin-bottom: 40px;
+}
+/* h1 and the image/text on the back of the cards */
+h1,
+.back {
+     text-align: center;
+}
+/* default button styling */
+.default button{
+    width: 120px;
+    height: 50px;
+    background-color:purple;
+}
+/* theme button */
+.choices button {
+    height: 170px;
+}
+/* text on the theme/first page */
+.OR {
+    margin-top: 40px;
+}
+/* theme buttons, front and back of cards, all the game buttons, and the restart button */
+.choices,
+div.default,
+.front,
+.back,
+.allGameBtns,
+.restartBtn,
+.start {
+    display: flex;
+}
+/* theme choices and the game button choices */
+.choices,
+.allGameBtns {
+    justify-content: space-evenly;
+}
+/* cards */
+.game {
+    display: inline;
+}
+/* game board section size */
+.matchBoard {
+    width: 700px;
+    margin: auto;
+}
+/* styling for game buttons where you choose a game */
+.gameBtn{
+    width: 140px;
+    height: 50px;
+    background-color: lime;
+    color: blue;
+}
+/* default button, front and back of cards, restart button */
+div.default,
+.front,
+.back,
+.restartBtn,
+.start {
+    justify-content: center;
+}
+
+/* this is how the card flips over */
+.topFlip {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+    -webkit-animation-name: flip1;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+@-webkit-keyframes flip1 {
+    from { -webkit-transform: rotateY(0deg); }
+    to { -webkit-transform: rotateY(180deg); }
+}
+/* start, default button, front and back of cards */
+.start,
+.front,
+.back,
+.default button {
+      align-items: center;
+}
+/* front and back of cards */
+.front,
+.back {
+    position: absolute;
+    backface-visibility: hidden;
+}
+/* div around front and back of cards */
+.indCard {
+    position: relative;
+}
+/* front of cards */
+.front {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+/* back of cards */
+.back {
+    transform: rotateY(180deg);
+    margin-left: 0!important;
+}
+/* this is the size of all the cards */
+.back,
+.front,
+.indCard {
+    margin-left: 30px;
+    height: 150px;
+    width:100px;
+    margin: 30px;
+}
+/* restart button styling */
+.restart {
+    height: 32px;
+    width: 100px;
+    border-radius: 16px;
+    background-color: fuchsia;
+    color: cyan;
+}
+/*======================== emoji/choice1================================= */
+/* choice1 gradient for back side of the card that user can pick */
+.choice1{
+    background: -webkit-radial-gradient(50% 50%, closest-corner, black , rgb(255, 0, 119));
+    background: -o-radial-gradient(50% 50%, closest-corner, black, rgb(255, 0, 119));
+    background: -moz-radial-gradient(50% 50%, closest-corner, black,  rgb(255, 0, 119));
+    background: -radial-gradient(50% 50%, closest-corner, black,  rgb(255, 0, 119));
+}
+/* choice1 and emoji-gradient border styling */
+.choice1,
+.emoji-gradient {
+     border: 2px solid lime;
+}
+/* emoji/choice1 styling for back side of card */
+.emoji-gradient{
+    background: -webkit-radial-gradient(50% 75%, closest-corner, black , rgb(255, 0, 119));
+    background: -o-radial-gradient(50% 75%, closest-corner, black, rgb(255, 0, 119));
+    background: -moz-radial-gradient(50% 75%, closest-corner, black,  rgb(255, 0, 119));
+    background: -radial-gradient(50% 75%, closest-corner, black,  rgb(255, 0, 119));
+    }
+/* emoji/choice1 styling for front side of card */
+.emojiFront {
+    background: linear-gradient(217deg, deeppink, blueviolet,cyan, green , lime);   
+}
+/*====================== Math/choice2 ========================*/
+/* front side of the math/choice2 styling for cards */
+.mathFront{
+    background: linear-gradient(217deg, cyan,darkblue ,cornflowerblue,blue ,deepskyblue);  
+}
+/* back side of math.choice2 styling for cards */
+.math-gradient{
+    background: -webkit-radial-gradient(50% 50%, closest-corner, lime , dimgrey);
+    background: -o-radial-gradient(50% 50%, closest-corner, lime,dimgrey );
+    background: -moz-radial-gradient(50% 50%, closest-corner, lime, dimgrey );
+    background: -radial-gradient(50% 50%, closest-corner, lime,dimgrey );
+     color: blue;
+    }
+/*======================= couples/choice3 =====================*/
+/* couples/choice3 styling for front side of cards */
+.couplesFront{
+    background: linear-gradient(217deg, violet,indigo, blue ,green ,yellow,orange ,red);  
+    color: deeppink;
+}
+/* couples/choice3 styling for back side of card */
+.couples-gradient {
+    background: -webkit-radial-gradient(50% 50%, closest-corner, darkblue , coral);
+    background: -o-radial-gradient(50% 50%, closest-corner, darkblue, coral );
+    background: -moz-radial-gradient(50% 50%, closest-corner, darkblue,  coral);
+    background: -radial-gradient(50% 50%, closest-corner, darkblue, coral );
+    color: mediumspringgreen;
+}
+/*================================= opposite/choice4=========================*/
+/* opposite/choice4 styling for front of cards */
+.oppositeFront {
+    background: linear-gradient(217deg, purple,orchid, yellow);  
+    color: blue;
+}
+/* opposite/choice4 styling for back side of cards */
+.opposite-gradient {
+    background: -webkit-radial-gradient(50% 50%, closest-corner, navy, turquoise);
+    background: -o-radial-gradient(50% 50%, closest-corner, navy, turquoise );
+    background: -moz-radial-gradient(50% 50%, closest-corner, navy, turquoise );
+    background: -radial-gradient(50% 50%, closest-corner, navy,  turquoise);
+}
+/* math/choice2 theme, choice 1 theme, h1 text, default button, and the gradient for the opposite/choice4 game option */
+.mathFront,
+.choice1, 
+h1, 
+.default button,
+.opposite-gradient {
+    color: white;
+}
+/* this is the image on the front side of all card fronts */
+.couplesFront,
+.mathFront,
+.emojiFront,
+.oppositeFront {
+    font-size: 80px!important;
+}

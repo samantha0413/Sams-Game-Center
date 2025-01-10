@@ -1,0 +1,171 @@
+body {
+    background-color: peachpuff;
+}
+/* title */
+h1 {
+    font-size: 100px;
+    margin-bottom: 0;
+}
+/* title, default text, makes the emoji center in the table */
+h1,
+.filled,
+h2 {
+    text-align: center;
+}
+/* centering start button, game pieces,reset button, default button and the game board */
+.start,
+.emojiChoices,
+table,
+.resetBtn,
+.defaultBtn {
+    justify-content: center;             
+}
+/* flexing start button, game pieces, score display, game board, default button and reset button  */
+.start,
+.emojiChoices,
+#main,
+table,
+.resetBtn,
+.defaultBtn {
+    display: flex;
+}
+/* start button */
+.startBtn {
+    height: 70px;
+    width: 175px;
+    font-size: 30px;
+    background-color: deeppink;
+    margin-top: 30px;
+    color: springgreen;
+}
+/* start button on hover */
+.startBtn:hover {
+    background-color: springgreen;
+    color: deeppink;
+}
+/* game pieces and score display */
+.emojiChoices,
+#main {
+    justify-content: space-evenly;
+}
+/* game piece buttons */
+.gamePiece{
+    font-size: 60px;
+    height: 82px;
+    width: 84px;
+    background-color: aqua;
+}
+/* instructions for the game piece section */
+.instructions,
+h2 {
+    color: crimson;
+}
+/* default button */
+.default {
+    background-color: navy;
+    color: aqua;
+    width: 82px;
+    height: 40px;
+}
+/* the squares on the table */
+td {
+    height: 175px;
+    width: 175px;
+}
+/* the span for the sore display */
+span {
+    margin-right: 40px;
+}
+/* the size of the text for the instructions to the game piece section and the score display */
+.instructions,
+#win,
+#lose,
+#tie,
+h2 {
+    font-size: 50px;
+}
+/* the score display */
+#win,
+.win {
+    color: green;
+}
+#lose,
+.lose {
+    color: red;
+}
+#tie,
+.tie {
+    color: blue;
+} 
+/* the size of the "text" in the table */
+.filled {
+    font-size: 110px;
+}
+/* putting some space between game board and score display */
+table {
+    margin-top: 20px;
+}
+/* the squares on the table to make it look like a tic-tac-toe board */
+#one,
+#two,
+#three {
+    border-bottom: solid 2px black;
+}
+#seven,
+#eight,
+#nine {
+    border-top: solid 2px black;
+}
+#one,
+#four,
+#seven {
+    border-right: solid 2px black;
+}
+#three,
+#six,
+#nine {
+    border-left: solid 2px black;
+}
+/* results of who won */
+.whoWon {
+    text-align: center;
+    font-size: 50px;
+    color: navy;
+}
+/* resest button */
+.default,
+.resetBtn button {
+    font-size: 20px;
+}
+.resetBtn button {
+    height: 52px;
+    width: 136px;
+    color: white;
+    background-color: red;
+    margin-bottom: 20px;
+}
+/* reset button on hover */
+.resetBtn button:hover {
+    background-color: yellow;
+    color: black;
+}
+footer a {
+    font-size: 30px;
+    margin-left: 30px;
+}
+/* media queries to make the board and game piece buttons smaller on smaller screens */
+@media screen and (max-width: 670px){
+    .gamePiece {
+        font-size: 50px;
+        height: 62px;
+        width: 65px;
+    }
+    td {
+        height: 100px;
+        width: 100px;
+    }
+    .filled {
+        font-size:50px;
+        text-align: center; 
+    }
+}
