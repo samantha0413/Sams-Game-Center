@@ -1,6 +1,7 @@
 $(() => {
     // checking the url to reset category at the main pain.
-    if (document.URL === "file:///Users/samantha.shepherd.264883/Desktop/samantha-shepherd-capstone/html/jeopardy.html") {
+    let location = document.location.href.split('/')
+    if (location[location.length - 1] === "jeopardy.html") {
         localStorage.setItem('category', JSON.stringify(''))
     }
     // all the variables that are being declared throughout the game
